@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta Gráfica (GPU) - Heaven VR</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #F5F5F5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1F1F1F;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            color: #BB86FC;
+            font-size: 36px;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #F5F5F5; /* Color de los enlaces */
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #BB86FC; /* Color de fondo al pasar el cursor */
+            color: #121212;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #1F1F1F;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #BB86FC; /* Color principal de los títulos */
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        h3 {
+            color: #03DAC5; /* Color secundario de los subtítulos */
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #F5F5F5; /* Asegurando que el texto principal tenga el color correcto */
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            color: #F5F5F5; /* Asegurando que el texto de las listas tenga el color correcto */
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .component-img {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .component-img img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            font-weight: bold;
+            color: #03DAC5; /* Color de los enlaces de retroceso */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #BB86FC; /* Cambio de color al pasar el cursor */
+        }
+
+        .sketchfab-embed-wrapper {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .sketchfab-embed-wrapper iframe {
+            width: 90vw; /* Ajusta el tamaño del iframe */
+            height: 500px; /* Ajusta la altura del iframe */
+            max-width: 1000px; /* Tamaño máximo del iframe */
+            border: 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .sketchfab-embed-wrapper p {
+            font-size: 16px;
+            margin: 10px 0 0;
+            color: #F5F5F5; /* Asegurando que el texto del pie de iframe tenga el color correcto */
+        }
+
+        .sketchfab-embed-wrapper a {
+            color: #03DAC5; /* Color de los enlaces en el pie de iframe */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .sketchfab-embed-wrapper a:hover {
+            color: #BB86FC; /* Cambio de color al pasar el cursor */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Heaven VR</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html#about">Sobre Nosotros</a></li>
+            <li><a href="index.html#features">Características</a></li>
+            <li><a href="index.html#benefits">Beneficios</a></li>
+            <li><a href="index.html#demo">Demostración</a></li>
+            <li><a href="index.html#download">Descargar</a></li>
+            <li><a href="index.html#components">Componentes del PC</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Tarjeta Gráfica (GPU)</h2>
+    <p>La <strong>tarjeta gráfica</strong> o GPU (Unidad de Procesamiento Gráfico) es un componente esencial en cualquier computadora moderna, especialmente para tareas que requieren un alto rendimiento gráfico. La GPU se encarga de procesar y renderizar imágenes y vídeos, y es vital para juegos, edición de video, y aplicaciones de realidad virtual.</p>
+
+    <div class="component-img">
+        <div class="sketchfab-embed-wrapper">
+            <iframe title="Nvidia GeForce RTX 4090" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/34abf652a48a4f5c948e99a462bf30ca/embed"></iframe>
+            <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                <a href="https://sketchfab.com/3d-models/nvidia-geforce-rtx-4090-34abf652a48a4f5c948e99a462bf30ca?utm_medium=embed&utm_campaign=share-popup&utm_content=34abf652a48a4f5c948e99a462bf30ca" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">
+                    Nvidia GeForce RTX 4090
+                </a> by 
+                <a href="https://sketchfab.com/5th-Dimension?utm_medium=embed&utm_campaign=share-popup&utm_content=34abf652a48a4f5c948e99a462bf30ca" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">
+                    5th Dimension
+                </a> on 
+                <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=34abf652a48a4f5c948e99a462bf30ca" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+            </p>
+        </div>
+    </div>
+
+    <h3>Importancia de la GPU en la Computadora</h3>
+    <p>La GPU no solo acelera el procesamiento gráfico, sino que también permite realizar tareas paralelas, mejorando el rendimiento general del sistema en aplicaciones que requieren gran capacidad de cálculo. Esto es crucial para:</p>
+    <ul>
+        <li><strong>Gaming:</strong> Las GPUs modernas permiten jugar a los últimos títulos con resoluciones altas y tasas de refresco rápidas, proporcionando una experiencia visual inmersiva.</li>
+        <li><strong>Edición de Video y Diseño Gráfico:</strong> La aceleración por hardware de la GPU mejora la velocidad de renderizado y el manejo de gráficos complejos.</li>
+        <li><strong>Realidad Virtual (VR) y Aumentada (AR):</strong> Ofrecen el rendimiento necesario para renderizar entornos 3D en tiempo real, mejorando la experiencia inmersiva.</li>
+    </ul>
+
+    <h3>Características Clave de las GPUs Modernas</h3>
+    <p>Las tarjetas gráficas modernas vienen con una serie de características avanzadas que las hacen indispensables para el rendimiento gráfico de alto nivel:</p>
+    <ul>
+        <li><strong>Ray Tracing:</strong> Simula cómo la luz interactúa con los objetos para crear efectos visuales más realistas en tiempo real.</li>
+        <li><strong>Tensor Cores:</strong> Diseñados para acelerar las tareas de aprendizaje profundo y el procesamiento de IA.</li>
+        <li><strong>Memoria GDDR6X:</strong> Ofrece mayor ancho de banda y velocidades de transferencia más rápidas para manejar texturas y datos complejos.</li>
+        <li><strong>Compatibilidad con DirectX 12 y Vulkan:</strong> Mejora el rendimiento en juegos y aplicaciones que utilizan estas APIs gráficas avanzadas.</li>
+    </ul>
+
+    <h3>Conclusión</h3>
+    <p>Elegir la GPU adecuada para tu sistema puede tener un impacto significativo en el rendimiento gráfico y la capacidad de realizar tareas intensivas. Al considerar una GPU, es importante evaluar la compatibilidad con tu configuración actual, el tipo de aplicaciones que utilizarás, y el presupuesto disponible.</p>
+
+    <a href="heaven.html#components" class="back-link">← Volver a Componentes del PC</a>
+</main>
+
+</body>
+</html>
